@@ -1,0 +1,166 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    color: #555555;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+p {
+    margin: 0;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+}
+h2 {
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    line-height: 5rem;
+}
+
+
+/*** navbar section ***/
+/*** Top Navbar ***/
+.top-navbar {
+    padding: 0;
+    background-color: #01427a !important;
+}
+.top-navbar .navbar-nav .nav-item {
+    padding: 0.2rem 5rem;
+    font-size: 1.3rem;
+}
+.top-navbar .navbar-nav .nav-item p {
+    color: #cccccc;
+    margin: 0;
+}
+.top-navbar .navbar-nav .nav-link {
+    display: inline-block;
+    color: #cccccc;
+    text-transform: uppercase;
+}
+.top-navbar .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+.register-link {
+    color: #f0a31e !important;
+}
+.register-link:hover {
+    color: #c47e04 !important;
+}
+.top-navbar .navbar-nav svg {
+    margin-right: 0.5rem;
+}
+
+/*** 2nd Top Navbar ***/
+/* .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+.navbar-light .navbar-brand {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand span {
+    color: #f0a31e;
+}
+nav .navbar-nav {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+nav .navbar-nav .nav-item {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+/*** header section ***/
+.header-section {
+    background: linear-gradient( 
+        to right bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)), 
+        url("/imgs/bg2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 80vh;
+}
+.header-info {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    color: #ffffff;
+}
+.header-info h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    line-height: 8rem;
+    font-weight: 700;
+}
+.header-info p {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+/*** buttons ***/
+.btn {
+    padding: 0.7rem 2.5rem;
+    text-transform: uppercase;
+    background-color: #f0a31e;
+    border-radius: 0.4rem;
+    outline: none !important;
+    color: #ffffff;
+    font-size: 1.4rem;
+    border: 2px solid #f0a31e;
+}
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn-1 {
+    margin-right: 2rem;
+}
+.btn-2 {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+.btn-1:hover, .btn-2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    color: #ffffff;
+}
+.btn-1:active, .btn-2:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+/*** search nav bar ***/
+.trip-search-navbar {
+    background-color: #01427a;
+    color: #cccccc;
+    padding: 1rem 0;
+}
+.trip-search-navbar p {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+.trip-search-navbar p span {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.trip-search-navbar input {
+   margin-right: 1.5rem;
+   padding: 0.4rem 2rem;
+   border-radius: 0.4rem;
+   border: none;
+}
