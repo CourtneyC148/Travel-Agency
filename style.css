@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -22,6 +26,7 @@ h2 {
 }
 section {
     margin-top: 10rem;
+    text-align: center;
 }
 
 /*** navbar section ***/
@@ -172,9 +177,6 @@ nav .navbar-nav .nav-item {
 }
 
 /*** special offers section ***/
-.special-offers-packages {
-    text-align: center;
-}
 .packages {
     display: inline-grid;
     margin-top: 2.5rem;
@@ -188,7 +190,7 @@ nav .navbar-nav .nav-item {
     width: 30rem;
     padding: 1rem 0;
 }
-
+/*** holiday section ***/
 .holiday-section {
     background: linear-gradient( 
         to right bottom,
@@ -199,13 +201,109 @@ nav .navbar-nav .nav-item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 40rem;
+    height: auto;
     color: #ffffff;
-    text-align: center;
+    padding: 5rem 0;
+}
+.holiday-section .icons {
+    padding-top: 2rem;
 }
 .holiday-section .svg-inline--fa {
-    font-size: 5rem;
-    /* border: 4px solid #555555;
-    border-radius: 50%; */
-    /* padding: 4rem; */
+    font-size: 9rem;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    padding: 2rem;
+}
+.holiday-section h4 {
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.holiday-section .svg-inline--fa:hover {
+    border: 4px solid #f0a31e;
+    color: #f0a31e;
+    position: relative;
+    bottom: 0.5rem;
+    cursor: pointer;
+}
+/*** happy client section ***/
+.client-section .container {
+    padding: 2rem 0;
+}
+.client-section .container p {
+    display: inline-block;
+}
+.client-section .container h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f0a31e;
+    padding: 0.2rem 0;
+}
+.client-section .container .ratings {
+   display: inline-flex;
+   position: relative;
+   left: 15rem;
+   color: #f0a31e;
+}
+.client-section .reviews {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: left;
+    padding: 2rem 3rem;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    margin: 0 0.5rem;
+    max-width: 30.333%;
+    opacity: 0.3;
+}
+.client-section .reviews:hover {
+    opacity: 1;
+    border-top: 3px solid #f0a31e;
+}
+
+/*** footer section ***/
+footer {
+    margin-top: 10rem;
+    background-color: #01427a;
+    color: #ffffff;
+    padding: 3rem 0;
+}
+footer h3 {
+    font-weight: 700;
+    color: #f0a31e;
+}
+footer p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+footer .date {
+    color: #f0a31e;
+    padding-bottom: 0.5rem;
+}
+footer input {
+    width: 14rem;
+    padding: 0.3rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0.4rem;
+    border: none;
+}
+footer ::placeholder {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+footer .btn {
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+}
+footer .svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1rem 0.2rem;
+    color: #ffffff;
+}
+footer .svg-inline--fa:hover {
+    color: #f0a31e;
 }
