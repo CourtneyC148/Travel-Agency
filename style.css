@@ -96,7 +96,7 @@ nav .navbar-nav .nav-item {
         to right bottom,
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)), 
-        url("/Imgs/bg2.jpg");
+        url("/imgs/bg2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -175,6 +175,9 @@ nav .navbar-nav .nav-item {
    border-radius: 0.4rem;
    border: none;
 }
+.trip-search-navbar form br {
+    display: none;
+}
 
 /*** special offers section ***/
 .packages {
@@ -196,7 +199,7 @@ nav .navbar-nav .nav-item {
         to right bottom,
         rgba(1, 66, 122, 0.6),
         rgba(1, 66, 122, 0.6)), 
-        url("/Imgs/bg1.jpg");
+        url("/imgs/bg1.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -241,7 +244,7 @@ nav .navbar-nav .nav-item {
 .client-section .container .ratings {
    display: inline-flex;
    position: relative;
-   left: 15rem;
+   left: 9rem;
    color: #f0a31e;
 }
 .client-section .reviews {
@@ -306,4 +309,50 @@ footer .svg-inline--fa {
 }
 footer .svg-inline--fa:hover {
     color: #f0a31e;
+}
+
+/*** media queries ***/
+
+@media only screen and (max-width: 1054px) {
+    .top-navbar .navbar-nav .nav-item {
+       font-size: 1.1rem;
+    }
+    .navbar {
+        top: 29px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        top: 0;
+    }
+    .trip-search-navbar br {
+        display: none;
+    }
+    .client-section .reviews {
+        max-width: 48%;
+    }
+    .client-section .container .ratings  {
+        left: 15rem;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .client-section .reviews {
+        max-width: 100%;
+    }
+    .trip-search-navbar {
+        text-align: center;
+    }
+    .trip-search-navbar input {
+        margin: 0.5rem 0;
+    }
+    .trip-search-navbar form br {
+        display: block;
+    }
+    .trip-search-navbar form .btn {
+        padding: 0.4rem 2rem;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
 }
